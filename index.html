@@ -15,6 +15,7 @@
         body {
             background-color: #F9C4AF;
         }
+
         .card {
             background-color: #F9C4AF;
         }
@@ -52,30 +53,71 @@
         </div>
         <div class="row mt-5">
             <div class="col-md-12 text-center">
-                <h2 >Opciones</h2>
+                <h2>Opciones</h2>
+            </div>
+        </div>
+
+         <!-- Modal SI-->
+         <div class="modal fade" id="ModalSi" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
                 </div>
+            </div>
+        </div>
+
+
+        <!-- Modal NO-->
+        <div class="modal fade" id="ModalNo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="row mt-5">
             <div class="card col-md-6 sm-12 xs-12" style="width: 10rem;">
                 <img class="card-img-top" src="/assets/cheers.png" alt="YES">
                 <div class="card-body">
-                  
-                  <a href="#" class="btn btn-primary btn-lg btn-block">YES</a>
-                </div>
-              </div>
 
-              <div class="card col-md-6 sm-12 xs-12" style="width: 10rem;">
+                    <button  type="button" class="btn btn-primary btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#ModalNo">YES</button>
+                </div>
+            </div>
+
+            <div class="card col-md-6 sm-12 xs-12" style="width: 10rem;">
                 <img class="card-img-top" src="/assets/gato triste.jpg" alt="NO">
                 <div class="card-body">
-                 
-                  <a href="#" class="btn btn-danger btn-lg btn-block">NO</a>
+
+                    <button type="button" class="btn btn-danger btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#ModalNo">NO</button>
                 </div>
-              </div>
+            </div>
 
 
         </div>
 
+
+       
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
